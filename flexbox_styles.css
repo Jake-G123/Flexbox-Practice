@@ -1,0 +1,33 @@
+/* 
+TODO: Add styles to match the layout in the image.
+Note: you should only need to use flexbox properties and margin/padding to create the layout.
+*/
+.card-container, .features, .footer-content {
+    display: flex;
+    flex-flow: row nowrap;
+}
+.footer-section {
+    margin: 0 1rem;
+}
+.card, .feature-item {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    justify-content:space-around;
+    margin: 0 1rem;  
+}
+
+main {
+    min-width: 775px;
+}
+
+.features {
+    align-items: start;
+}
+
+/* 
+Challenge: Use flexbox in media queries to create a responsive layout 
+*/
+
+
