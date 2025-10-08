@@ -2,9 +2,17 @@
 TODO: Add styles to match the layout in the image.
 Note: you should only need to use flexbox properties and margin/padding to create the layout.
 */
-.card-container, .features, .footer-content {
+
+.card-container, .features, .footer-content, header {
     display: flex;
     flex-flow: row nowrap;
+}
+header {
+    justify-content: space-around;
+    align-items: center;
+}
+.logo, .user-actions, .nav-link {
+    padding: 1rem;
 }
 .footer-section {
     margin: 0 1rem;
@@ -18,8 +26,8 @@ Note: you should only need to use flexbox properties and margin/padding to creat
     margin: 0 1rem;  
 }
 
-main {
-    min-width: 775px;
+body {
+    min-width: 850px; /* under 850px flexbox positionings get wonky */
 }
 
 .features {
@@ -27,7 +35,7 @@ main {
 }
 
 /* 
-Challenge: Use flexbox in media queries to create a responsive layout 
+Challenge: Use flexbox in media queries to create a responsive layout --Don't have time sorry--
 */
 
 
